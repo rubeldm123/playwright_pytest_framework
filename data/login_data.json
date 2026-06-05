@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "test_name": "valid_login_user",
+      "username": "rubeldm123@gmail.com",
+      "password": "rubeldm123@gmail.com",
+      "expected_result": "success"
+    },
+    {
+      "test_name": "invalid_login_user",
+      "username": "wrong_user",
+      "password": "wrong_password",
+      "expected_result": "failure"
+    }
+  ]
+}
