@@ -9,6 +9,7 @@ class LoginPage(BasePage):
         self.username_input="#username"
         self.password_input="#password"
         self.login_button="button[name='login']"
+        self.error_message = ".woocommerce-error"
 
 
     #Page Actions
@@ -25,3 +26,5 @@ class LoginPage(BasePage):
         self.enter_password(password)
         self.click_login_button()
 
+    def get_error_message(self):
+            return self.get_text(self.error_message)
