@@ -12,7 +12,7 @@ SCREENSHOT_FOLDER = Path(__file__).parent / "screenshots"
 def page():
     with sync_playwright() as p:
         browser = p.chromium.launch(
-            headless=False,
+            headless=True,
             slow_mo=5000
         )
         page = browser.new_page()
